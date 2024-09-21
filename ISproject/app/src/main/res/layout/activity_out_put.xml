@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OutPutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/MainNavButton"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/OutPut1"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:background="@drawable/btn_click"
+            android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:onClick="OutPut1ButtonClick"
+            android:text="Бронирование"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="112dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/OutPut2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:background="@drawable/btn_click"
+            android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:onClick="OutPut2ButtonClick"
+            android:text="Постояльцы"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="112dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/OutPut3"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:background="@drawable/btn_click"
+            android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:onClick="OutPut3ButtonClick"
+            android:text="Мероприятия"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="112dp" />
+
+    </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+        android:id="@+id/MainNavButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:onClick="MainButtonClick"
+        android:text="На главную"
+        android:backgroundTint="@color/m3_ref_palette_primary40"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txt_password" type="id" />
+    <item name="txt_grant" type="id" />
+    <item name="txt_delete_bin" type="id" />
+    <item name="txt_edit" type="id" />
+    <item name="txt_supplier" type="id" />
+    <item name="txt_date" type="id" />
+    <item name="txt_volume" type="id" />
+    <item name="txt_price" type="id" />
+    <item name="txt_phone" type="id" />
+    <item name="txt_place" type="id" />
+    <item name="txt_event" type="id" />
+</resources>

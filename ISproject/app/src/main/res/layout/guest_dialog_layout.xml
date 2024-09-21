@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24sp"
+        android:layout_marginEnd="24sp"
+        android:layout_marginTop="16dp"
+        android:hint="Введите ФИО">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/GuestFIO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24sp"
+        android:layout_marginEnd="24sp"
+        android:layout_marginTop="16dp"
+        android:hint="Введите номер телефона"
+        android:layout_below="@+id/textInputLayout2">
+    <com.vicmikhailau.maskededittext.MaskedEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        app:mask="+7(###)###-##-##"
+        android:id="@+id/GuestPhone"
+        android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <DatePicker
+        android:id="@+id/GuestDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/textInputLayout3"/>
+
+</RelativeLayout>
